@@ -93,7 +93,7 @@ print()
 print("Testing set results for Caucasians:")
 print_results(pm, testing_set, constants.RACE_CAUCASIAN)
 
-    pm.save_model_weights(MODEL_FILE, constants.feature_names)
+pm.save_model_weights(MODEL_FILE, constants.feature_names)
 
 
 def select_features_to_use():
