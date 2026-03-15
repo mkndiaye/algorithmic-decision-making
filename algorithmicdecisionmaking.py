@@ -74,26 +74,26 @@ def main():
 
 # QUESTION 2
 # Training set results for African Americans
-print()
-print("Training set results for African Americans:")
-print_results(pm, training_set, constants.RACE_AFRICAN_AMERICAN)
+    print()
+    print("Training set results for African Americans:")
+    print_results(pm, training_set, constants.RACE_AFRICAN_AMERICAN)
 
 # Training set results for Caucasians
-print()
-print("Training set results for Caucasians:")
-print_results(pm, training_set, constants.RACE_CAUCASIAN)
+    print()
+    print("Training set results for Caucasians:")
+    print_results(pm, training_set, constants.RACE_CAUCASIAN)
 
 # Testing set results for African Americans
-print()
-print("Testing set results for African Americans:")
-print_results(pm, testing_set, constants.RACE_AFRICAN_AMERICAN)
+    print()
+    print("Testing set results for African Americans:")
+    print_results(pm, testing_set, constants.RACE_AFRICAN_AMERICAN)
 
 # Testing set results for Caucasians
-print()
-print("Testing set results for Caucasians:")
-print_results(pm, testing_set, constants.RACE_CAUCASIAN)
+    print()
+    print("Testing set results for Caucasians:")
+    print_results(pm, testing_set, constants.RACE_CAUCASIAN)
 
-pm.save_model_weights(MODEL_FILE, constants.feature_names)
+    pm.save_model_weights(MODEL_FILE, constants.feature_names)
 
 
 def select_features_to_use():
