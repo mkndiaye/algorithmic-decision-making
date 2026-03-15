@@ -33,6 +33,8 @@ def main():
     print("Reading training data: " + TRAINING_DATAFILE)
     training_set = Dataset(TRAINING_DATAFILE)
 
+
+
     # Select the features that we want to use to train the model
     features_to_use = select_features_to_use()
 
@@ -69,6 +71,27 @@ def main():
     feature_index = constants.AGE_LESS_THAN_25
     print("Testing set results for " + constants.feature_names[feature_index])
     print_results(pm, testing_set, feature_index)
+
+# QUESTION 2
+# Training set results for African Americans
+print()
+print("Training set results for African Americans:")
+print_results(pm, training_set, constants.RACE_AFRICAN_AMERICAN)
+
+# Training set results for Caucasians
+print()
+print("Training set results for Caucasians:")
+print_results(pm, training_set, constants.RACE_CAUCASIAN)
+
+# Testing set results for African Americans
+print()
+print("Testing set results for African Americans:")
+print_results(pm, testing_set, constants.RACE_AFRICAN_AMERICAN)
+
+# Testing set results for Caucasians
+print()
+print("Testing set results for Caucasians:")
+print_results(pm, testing_set, constants.RACE_CAUCASIAN)
 
     pm.save_model_weights(MODEL_FILE, constants.feature_names)
 
